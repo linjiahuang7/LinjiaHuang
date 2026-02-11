@@ -3,23 +3,67 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>小正直的网站</title>
-  <style>
-    body { font-family: system-ui, -apple-system, "PingFang SC", sans-serif; margin: 0; }
-    .wrap { max-width: 860px; margin: 0 auto; padding: 48px 20px; }
-    .card { padding: 24px; border: 1px solid #eee; border-radius: 16px; }
-    h1 { margin: 0 0 8px; }
-    a { text-decoration: none; }
-  </style>
+  <title>Linjia Huang | About</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="wrap">
-    <div class="card">
-      <h1>嗨，我是小正直 👋</h1>
-      <p>这是我用 GitHub Pages 搭的第一个网页！</p>
-      <p>📌 我在做：BugNet / plant traits / phyllosphere stuff</p>
-      <p>🔗 <a href="https://github.com/">我的 GitHub</a></p>
+  <div class="container">
+    <div class="nav">
+      <div class="brand">Linjia Huang ✨</div>
+      <div class="navlinks">
+        <a class="active" href="index.html">About</a>
+        <a href="publications.html">Publications</a>
+        <a href="cv.html">CV</a>
+      </div>
     </div>
+
+    <div class="hero">
+      <h1>Hi, I’m Linjia 👋</h1>
+      <p>PhD student · Plant ecology · BugNet · Neighbour effects & consumer interactions & plant traits </p>
+      <p>
+        <span class="badge">University of Bern</span>
+        <span class="badge">Traits · Pathogen · Herbivory</span>
+      </p>
+      <p class="small">
+        Email: <a href="mailto:linjia221@gmail.com">YOUR@EMAIL.COM</a> ·
+        GitHub: <a href="https://github.com/linjiahuang7" target="_blank" rel="noreferrer">linjiahuang7</a>
+      </p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h2>About</h2>
+        <p>
+          I study how consumer exclusion change plant growth and how neigbourhood effect be influnced by consumer
+          and how plant traits help explain these patterns.
+        </p>
+        <p class="small">（这段你可以随便改成更口语/更学术的版本）</p>
+      </div>
+
+      <div class="card">
+        <h2>Research interests</h2>
+        <ul>
+          <li>Dilution vs spillover in neighbour effects</li>
+          <li>Consumer interactions (insect / mollusc / fungal exclusion)</li>
+          <li>Trait-based ecology & intraspecific variation</li>
+          <li>Phyllosphere feedbacks</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Quick links</h2>
+        <ul>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="cv.html">CV</a> (and CV.pdf download)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer">© <span id="y"></span> Linjia Huang · Built with GitHub Pages</div>
   </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
